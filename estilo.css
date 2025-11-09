@@ -282,3 +282,9 @@ section h1, section h2 {
   text-align: inherit !important;
   color: inherit !important;
 }
+
+/* Estilo específico para el párrafo de introducción */
+section#inicio .section-content p {
+  font-size: 12px;
+  line-height: 1.5;
+}
