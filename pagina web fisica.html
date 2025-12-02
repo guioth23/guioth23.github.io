@@ -1,0 +1,1096 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Sistemas de generación de energía eléctrica - Parte I</h1>
+        <img src="img/Logo-UTP-NEGRO-294-X-176.png" alt="Logo" class="header-img" />
+      </div>
+  </header>
+
+  <!-- Botón para abrir/cerrar menú -->
+  <button id="toggle-btn">☰</button>
+  
+  <!-- Menú lateral -->
+ <aside id="menu">
+  <h2>Menú</h2>
+  <ul class="menu-list">
+    <li><a href="#inicio">Inicio</a></li>
+
+    <li>
+      <button class="submenu-btn">Conceptos Generales ▼</button>
+      <ul class="submenu">
+        <li><a href="#generacion-electrica">Generación eléctrica</a></li>
+        <li><a href="#transmision">Transmisión de energía eléctrica</a></li>
+        <li><a href="#distribucion">Distribución de energía eléctrica</a></li>
+
+      </ul>
+    </li>
+
+    <li>
+      <button class="submenu-btn">Componentes del Sistema ▼</button>
+      <ul class="submenu">
+        <li><a href="#centrales-termicas">Centrales térmicas</a></li>
+        <li><a href="#centrales-hidroelectricas">Centrales hidroeléctricas</a></li>
+        <li><a href="#centrales-solares">Centrales solares</a></li>
+        <li><a href="#centrales-nucleares">Centrales nucleares</a></li>
+        <li><a href="#no-renovables">Sistemas No Renovables</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <button class="submenu-btn">Tipos de Sistemas ▼</button>
+      <ul class="submenu">
+        <li><a href="#renovables">Sistemas Renovables</a></li>
+        <li><a href="#sistemas-de-generacion">Sistemas de Generación</a></li>
+        <li><a href="#sistema-segun-escalado">Sistemas según escalado</a></li>
+        <li><a href="#sistema-segun-conexion">Sistemas según modo de conexión</a></li>
+      </ul>
+    </li>
+    <li><a href="#formulas">Fórmulas</a></li>
+
+    <li><a href="info web fisica.html" target="_blank">Integrantes</a></li>
+  </ul>
+</aside>
+
+    <!-- Contenido principal -->
+    <main>
+      <section id="inicio">
+        <h1>Introducción</h1>
+        <div class="section-content">
+          <p>
+            La generación eléctrica es un proceso fundamental para el desarrollo
+tecnológico y humano, ya que la electricidad se ha convertido en un recurso
+indispensable en la vida cotidiana y en la industria. Desde su descubrimiento, la
+capacidad de producir electricidad se ha convertido en una de las principales
+preocupaciones de la humanidad debido a que este se ha normalizado,a tal punto
+de volverse esencial in todos los ámbitos de la actividad humana.
+El consumo energético mundial ha experimentado un crecimiento exponencial, ya
+que mientras que en el año 1900 , el consumo energético apenas alcanzaba 0,7
+teravatios, mientras que para el año 2005 se estimaba en aproximadamente 138.900
+teravatios, reflejando así un incremento impulsado por la industrialización y el
+consumo de la sociedad.
+Esta creciente demanda ha conllevado a buscar eficientes formas de generación
+eléctrica, invirtiendo recursos para la producción, el transporte y la distribución de la
+energía.
+La corriente alterna ha sido clave para llevar electricidad a donde es necesario ,
+acompañado de la construcción de vastas redes de transmisión y distribución. Sin
+embargo el acceso a este recurso ha sido y sigue siendo desigual, ya que mientras
+que los países industrializados son grandes consumidores , muchas regiones aún se
+enfrentan a limitaciones para tener acceso plenamente a los beneficios.
+Teniendo en cuenta lo anterior es importante destacar que la generación eléctrica
+debe adaptarse constantemente a la curva de la demanda, la cual varía según
+factores como las actividades industriales y los hábitos de consumo. En este
+contexto, comprender los conceptos de la generación eléctrica, que es lo que se
+verá reflejado en la información suministrada.
+
+          </p>
+
+
+      <section id="generacion-electrica">
+        <h1>Conceptos Generales</h1>
+          <div class="section-content">
+    <h2>¿Qué son las magnitudes eléctricas?</h2>
+    <ul>
+      <li>
+        <h3>Tensión</h3>
+        <p>
+          Tensión Eléctrica (V): Similar a la presión del agua en un sistema de riego, la tensión determina la fuerza que impulsa el flujo de la corriente eléctrica entre dos puntos. Medida en voltios (V), es la "presión" que mueve los electrones a través de un conductor.
+        </p>
+      </li>
+      <li>
+        <h3>Corriente</h3>
+        <p>
+          Corriente Eléctrica (I): La corriente es el flujo de electrones, comparable al volumen de agua que fluye a través de un tubo. Dependiendo de la tensión y la resistencia, se mide en amperios (A), reflejando la cantidad de carga eléctrica que pasa por un punto en un segundo.
+        </p>
+      </li>
+      <li>
+        <h3>Resistencia</h3>
+        <p>
+          Resistencia Eléctrica (R): La resistencia es la oposición al flujo de corriente, análoga al estrechamiento en una manguera que dificulta el flujo de agua. Medida en ohmios (Ω), depende del material del conductor y de sus dimensiones, influenciando directamente en la cantidad de corriente que puede fluir.
+        </p>
+      </li>
+      <li>
+        <h3>Potencia</h3>
+        <p>
+          Potencia Eléctrica (P): La potencia representa la tasa en la cual la energía es suministrada o consumida en un circuito, similar a la velocidad con la que el agua es bombeada a través de un sistema de riego. Medida en vatios (W), indica la cantidad de trabajo realizado por segundo.
+        </p>
+      </li>
+    </ul>
+  </div>
+        <h2>Generación eléctrica</h2>
+        <h3>¿Qué es un sistema de generación eléctrica?</h3>
+        <p>
+         La generación eléctrica es el conjunto de procesos mediante los cuales se produce
+energía eléctrica a partir de la transformación de las energías primarias, como la térmica,
+eólica, hidráulica, nuclear, solar u otras fuentes disponibles. El proceso de generación
+eléctrica puede realizarse mediante diversos sistemas y tecnologías , dependiendo del tipo
+de fuente utilizada. En todos los casos el objetivo principal es obtener electricidad de
+manera eficiente, segura y sostenible, garantizando el suministro energético para el
+consumo doméstico, industrial y comercial.
+        </p>
+        <h2>Generación eléctrica</h2>
+        <h3>¿Qué es?</h3>
+        <p>
+Es la primera etapa del sistema eléctrico en la que se produce la
+energía eléctrica a partir de diversas fuentes,como la energía
+mecánica, térmica, química, nuclear, solar o eólica.
+        </p>
+        
+         <h3>¿Dónde ocurre?</h3>
+        <p>
+Este proceso se lleva a cabo en las centrales eléctricas, las
+cuales están diseñadas para aprovechar diferentes fuentes de
+energía.Los distintos tipos de centrales , son la térmica, la hidráulica,
+las nucleares, las eólicas y las nucleares.
+        </p>
+
+           <h3>¿Cómo funciona?</h3>
+        <p>
+El proceso consta de varios pasos. En primer lugar, la fuente de
+energía debe convertirse en una forma que pueda utilizarse para
+generar electricidad. Si vamos a utilizar combustibles fósiles, tenemos
+que quemar el material ya mencionado para calentar agua y producir
+vapor. En el caso de las fuentes de energía renovables , lo que
+implica la utilización de la energía del viento, luz solar o el agua para
+hacer girar turbinas, una vez que se ha convertido en una forma
+utilizable , por lo general se acciona una turbina, conectado a un
+generador que produce energía eléctrica.
+        </p>
+      </section>
+
+      <section id="transmision">
+        <h1>Transmisión de energía eléctrica</h1>
+        <div class="section-content">
+          <h2>¿Qué es?</h2>
+          <p>
+            Es el proceso que permite transferir la energía obtenida en las centrales y transportarla a largas distancias hasta los centros de consumo. Existen líneas de transmisión de Corriente alterna que utilizan tres conductores para llevarla a larga distancia, y las líneas de transmisión de corriente continua usan dos conductores para transportar la corriente a larga distancia.
+          </p>
+          <ul>
+            <li>Conductores: Son los que permiten el paso de la corriente eléctrica. Presenta poca resistencia al movimiento de energía lo que facilita su circulación. El número de conductores en la línea de transmisión dependerá de la cantidad de circuitos por fase.</li>
+            <li>Líneas de transmisión: Cables que transportan la energía eléctrica a alta tensión.</li>
+            <li>Torres o postes de transmisión: Estructura que soportan las líneas aéreas y cables de una línea de transmisión eléctrica.</li>
+            <li>Aisladores: Elementos que evitan fugas de corriente y mantienen las líneas separadas de las estructuras metálicas.</li>
+            <li>Transformadores: Equipos que modifican el nivel de voltaje de la corriente eléctrica.</li>
+          </ul>
+          <h2>Tipos de transmisión</h2>
+          <ul>
+            <li>Líneas de baja tensión: ≤ 1 kV , Su distribución es a hogares, pequeños gobiernos o alumbrado público. Transportan poca potencia y cubren estancias cortas.</li>
+            <li>Líneas de media tensión: De 1 kv a 35 kv, lleva la energía desde subestaciones hasta barrios o zonas industriales, puede ser aérea y subterránea en áreas urbanas.</li>
+            <li>Líneas de alta tensión: De 35 kv a 230 kv, se usa para subestaciones regionales o grandes centros industriales, usan torres metálicas altas y cables gruesos de aluminio o cobre.</li>
+            <li>Líneas de muy alta tensión: De 230 kv a 800 kv, es una transmisión a largas distancias entre zonas de generación y grandes centros de consumo.</li>
+            <li>Línea de mayor tensión: (> 800 kv), Se usa para transmisión nacional o internacional en países con grandes distancias o demanda energética.</li>
+            <li>Líneas aéreas: Se instalan sobre torres de acero o postes de concreto. Se usa en zonas rurales o interurbanas.</li>
+            <li>Líneas subterráneas: Cables enterrados bajo tierra, protegidos con aislamiento especial. Se usa más que todo para centros urbanos, aeropuertos y hospitales.</li>
+            <li>Líneas submarinas: Se colocan bajo el mar o ríos para conectar islas o países.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="distribucion">
+        <h1>Distribución de energía eléctrica</h1>
+        <div class="section-content">
+          <h2>¿Qué es?</h2>
+          <p>
+Es la etapa final en el suministro de electricidad, se refiere al
+conjunto de cables subterráneos y los centros de transformación que
+permiten hacer llegar la energía al consumidor.
+          </p>
+
+           <h2>¿Cómo funciona?</h2>
+          <p>
+Primero se hace una reducción de voltaje, donde los
+transformadores bajan la tensión de transmisión a un nivel seguro de
+distribución, la energía se transporta por las líneas de media tensión
+hasta barrios o zonas, se hace una reducción más de la tensión para
+uso doméstico, por último la energía eléctrica llega a donde estaba
+destinada.
+          </p>  
+        </div>
+      </section>
+
+      <section id="fuente-de-energia-primaria">
+        <h1>Componentes del sistema de generación eléctrica</h1>
+        <div class="section-content">
+          <h2>¿Qué es fuente de energía primaria?</h2>
+          <p>
+            Se trata de los recursos energéticos que surgen de la
+naturaleza y no han sido transformados.Estos se usan para obtener
+energía eléctrica.
+          </p>
+          <h2>Tipo de fuentes</h2>
+          <ul>
+            <li>Fuentes renovables: Son las fuentes que se renuevan naturalmente en corto tiempo, y que no se agotan con su explotación. Ejemplo: agua, viento, sol, biomasa (materiales orgánicos), geotermia.</li>
+            <li>Fuentes no renovables: Son las fuentes que se agotan y que proceden de los combustibles fósiles o de los materiales nucleares. Ejemplo: carbón, petróleo, gas, uranio.</li>
+          </ul>
+
+          <h2>Función</h2>
+          <p>
+Está permitiría proporcionar la energía inicial necesaria para
+hacer funcionar las máquinas motrices (como turbinas o generadores)
+que posteriormente pondrían en funcionamiento el generador eléctrico
+para producir electricidad.
+  
+          </p>
+        </div>
+      </section>
+
+       <section id="sistema-de-generacion-electrica">
+        <h2>Sistema de generación eléctrica</h2>
+        <div class="section-content">
+          <h2>¿Qué es?</h2>
+          <p>
+Es el conjunto de las máquinas e instalaciones encargadas de la
+producción de la energía eléctrica a partir de otras formas de energía
+(como la mecánica, térmica, solar, eólica, etc.). Es la primera etapa
+del sistema eléctrico de potencia.
+          </p>
+
+          <h2>Función</h2>
+          <p>
+Es transformar una fuente de energía primaria (agua, viento, sol,
+combustibles ...) en energía eléctrica que sea utilizable para hogares,
+industrias, comercios.
+          </p>
+
+          <h2>Equipos principales</h2>
+          <ul>
+            <li>Fuente de energía primaria: el recurso natural del que se obtiene la energía (agua, viento, sol ...).</li>
+            <li>Máquina motriz: la que convierte la energía primaria en energía mecánica (una turbina o un motor, por ejemplo).</li>
+            <li>Generador eléctrico: el que convierte la energía mecánica en energía eléctrica.</li>
+            <li>Sistema de control y protección: el que controla el funcionamiento y protege los equipos.</li>
+            <li>Transmisión inicial: el que transporta la energía desde la planta hasta la red principal.</li>
+          </ul>
+          
+        </div>
+      </section>
+
+       <section id="generador-electrica">
+        <h2>Generador eléctrico</h2>
+        <div class="section-content">
+          <h2>¿Qué es?</h2>
+          <p>
+El generador eléctrico es la máquina que convierte la energía
+mecánica en energía eléctrica por medio del principio de inducción
+electromagnética. Forma parte de los equipos principales del sistema
+de generación eléctrica.
+          </p>
+
+          <h2>Función</h2>
+          <p>
+Su función es producir corriente eléctrica (alternada o continua)
+para alimentar redes eléctricas, industrias o equipos.
+          </p>
+
+          <h2>Principio básico</h2>
+          <p>
+Se basa en el principio de la inducción electromagnética
+descubierto por Michael Faraday, que dice: Cuando un conductor se
+mueve en un campo magnético, se genera una corriente eléctrica en
+su interior. En un generador se tiene una bobina que gira en medio de
+un campo magnético (o viceversa) y entonces produce electricidad.
+          </p>
+
+          <h2>Componentes principales</h2>
+          <ul>
+            <li>Rotor: Elemento que se moviliza y que da origen al campo magnético.</li>
+            <li>Estator: Parte fija donde tiene lugar la corriente inducida.</li>
+            <li>Carcasa: Protege las partes que se encuentran en el interior del generador.</li>
+            <li>Escobillas y anillos rozantes (en algunos tipos): Permiten transferir corriente desde el rotor hacia el exterior.</li>
+            <li>Sistema de excitación: Sirve para proporcionar la corriente que da origen al campo magnético.</li>
+          </ul>
+          
+        </div>
+      </section>
+
+       <section id="sistema-de-excitacion">
+        <h2>Sistema de excitación</h2>
+        <div class="section-content">
+          <h2>¿Qué es?</h2>
+          <p>
+El sistema de excitación es el conjunto de mecanismos que
+proporcionan corriente continua (DC) al campo magnético del
+generador (rotor) para que pueda producir electricidad. Sin el sistema
+de excitación, el generador no podría crear el campo magnético que
+es necesario para inducir la corriente eléctrica en el estator.
+          </p>
+          
+          <h2>Función</h2>
+          <p>
+Proveer la corriente necesaria para la excitación del bobinado del
+rotor del generador. Regular el voltaje generado en función de la
+demanda; Proteger y estabilizar el sistema ante variaciones de carga
+o averías. En resumen: regula la fuerza del campo magnético y, en
+consecuencia, la energía eléctrica generada.
+          </p>
+
+          <h2>Tipos</h2>
+          <ul>
+            <li>Excitación estática: Utiliza como parte del sistema a los rectificadores electrónicos (diodos o tiristores); No incluye partes móviles; Es rápida, moderna y requiere bajo mantenimiento.</li>
+            <li>Excitación rotativa: Dispone de un pequeño generador auxiliar (denominado excitatriz) que genera corriente continua. Puede ser con escobillas: la corriente pasa a través de anillos rozantes. Sin escobillas: se vale de un sistema de diodos rotativos; sistema más seguro y duradero.</li>
+          </ul>
+        </div>
+      </section>
+
+       <section id="transformadores-elevados">
+        <h2>Transformadores elevados</h2>
+        <div class="section-content">
+          <h2>¿Qué es?</h2>
+          <p>
+El transformador elevado es un transformador eléctrico montado
+sobre poste o estructura elevada, que se utiliza como elemento de las
+redes de distribución, para bajar el voltaje de las líneas eléctricas y
+hacerlo seguro para el consumo doméstico o comercial.
+          </p>
+
+          <h2>Función</h2>
+          <p>
+Consiste en transformar la energía eléctrica de media tensión -por
+caso 13.200 voltios- a baja tensión (120 o 240 V). Las características
+de un transformador, tal como podemos observar en la serie de
+esquemas del transformador, permiten que la electricidad llegue en
+condiciones seguras y estables hasta las casas, los negocios o
+las fábricas pequeñas (pero no a las grandes fábricas industriales,
+para cuya alimentación se utilizan transformadores de mayor voltaje,
+que transforman la energía eléctrica de baja tensión en media, o bien
+las irriga mediante el acoplamiento de las redes de baja tensión). En
+resumen: transformar la energía de la red en un voltaje adecuado,
+pero inadecuado para ser usado directamente por los usuarios
+finales.
+          </p>
+
+          <h2>Componentes principales</h2>
+          <ul>
+            <li>Núcleo magnético: guía el flujo del campo magnético.</li>
+            <li>Bobinas o devanados: Primario: recibe la energía de media tensión. Secundario: entrega la energía a baja tensión.</li>
+            <li>Tanque: dentro del cual se contiene el aceite dieléctrico que aísla y enfría las bobinas.</li>
+            <li>Aisladores: distancia eléctrica del transformador por estructura metálica o poste.</li>
+            <li>Válvulas y respiraderos: permiten la salida de gases de forma y compensan la presión.</li>
+            <li>Conectores y fusibles: protegen y conectan el transformador a la red eléctrica.</li>
+          </ul>
+        </div>
+      </section>
+
+       <section id="sistemas-de-control-y-proteccion">
+        <h2>Sistemas de control y protección</h2>
+        <div class="section-content">
+          <h2>¿Qué es?</h2>
+          <p>
+El sistema de control y protección es el conjunto de dispositivos,
+sensores, autómatas y mecanismos con la función de supervisar,
+regular, controlar y proteger el estado de operación de generadores,
+transformadores y redes eléctricas.Su principal finalidad es mantener
+la estabilidad, evitar serios daños en los equipos involucrados y
+garantizar en todo momento un suministro eléctrico seguro y sin
+interrupciones.
+          </p>
+
+          <h2>Función</h2>
+          <ul>
+            <li>Controlar variables eléctricas como voltaje, corriente y frecuencia.</li>
+            <li>Proteger los equipos ante condiciones como fallas, sobrecargas e incluso cortocircuitos.</li>
+            <li>Desconectar de forma automática alguna parte del sistema en caso de detectar algún tipo de anomalía.</li>
+            <li>Garantizar el funcionamiento estable y eficiente del sistema de generación, transmisión y distribución.</li>
+          </ul>
+
+          <h2>Componentes principales</h2>
+          <ul>
+            <li>Sensores y medidores: detectan variaciones de voltaje, corriente y frecuencia.</li>
+            <li>Relés de protección: activan mecanismos de seguridad o al menos relaciones seguras del estado de las variables al ser detectadas dichas variaciones.</li>
+            <li>Interruptores automáticos (breakers): abren el circuito cuando hay una sobrecarga o corto.</li>
+            <li>Controladores automáticos: regulan la velocidad de las turbinas y la excitación del generador.</li>
+            <li>Monitoreo remoto (SCADA): supervisan y controlan remotamente las plantas eléctricas, las subestaciones, las líneas de la red de distribución eléctrica.</li>
+          </ul>
+          
+        </div>
+      </section>
+
+      <section id="centrales-termicas">
+        <h1>Tipos de plantas de generación eléctrica</h1>
+        <div class="section-content">
+          <h2>Centrales térmicas</h2>
+          <p>
+            Es una instalación donde se hace el proceso de generación de energía eléctrica a partir de energía térmica, generada al quemar combustible o mediante diversas fuentes de calor.
+          </p>
+          <h3>Funcionamiento</h3>
+          <ul>
+            <li>El combustible se quema en una caldera para obtener calor.</li>
+            <li>A partir de esa energía calorífica el agua que se transporta por la caldera se calienta y se va transformando en vapor de agua a alta presión.</li>
+            <li>El vapor de agua se libera y acciona las palas de la turbina, que convierte esa energía térmica en energía mecánica de rotación, la que a su vez hace girar el alternador.</li>
+            <li>El alternador o generador de corriente alterna transforma la energía mecánica de rotación en energía eléctrica, que se vierte en la red.</li>
+            <li>La corriente eléctrica se genera a unos 20 mil voltios y se pasa a los transformadores para elevar la tensión hasta unos 400,000 voltios, para su posterior traslado hasta los puntos de consumo.</li>
+          </ul>
+          <h3>Características principales</h3>
+          <ul>
+            <li>Utilizan combustibles fósiles o térmicos como fuente de energía.</li>
+            <li>Son capaces de generar grandes cantidades de electricidad de manera continua.</li>
+            <li>Producen emisiones contaminantes, dependiendo del tipo de combustible.</li>
+            <li>Su funcionamiento se basa en el ciclo termodinámico.</li>
+          </ul>
+          <h3>Tipos de centrales termoeléctricas</h3>
+          <p><strong>1. Centrales termoeléctricas de carbón:</strong> Utilizan carbón mineral como combustible, es una de las más tradicionales y genera grandes cantidades de energía, pero también genera altas emisiones contaminantes.</p>
+          <p><strong>Ejemplo:</strong> La central termoeléctrica Termotasajero es una de las principales plantas de generación a carbón en Colombia. Ubicada en el departamento de Norte de Santander. Termotasajero se compone de dos unidades: Termotasajero I y Termotasajero II. Cada unidad tiene una configuración independiente de caldera, turbinas y sistemas de control, lo que permite operación individual o conjunta según la demanda del sistema eléctrico.</p>
+          <ul>
+            <li>Tiene una capacidad total de 335 MW distribuidos en:</li>
+            <ul>
+              <li><strong>Termotasajero I</strong><br>
+                Capacidad nominal: 163 MW<br>
+                Capacidad neta reportada: 165 MW
+              </li>
+              <li><strong>Termotasajero II</strong><br>
+                Capacidad nominal: 186 MW<br>
+                Capacidad neta efectiva: 170 MW
+              </li>
+            </ul>
+            <li>La capacidad de Termotasajero representa alrededor del 1,9% del total de la capacidad instalada del sistema interconectado nacional.</li>
+                    <div style="text-align:center;margin:30px 0 0 0;">
+                      <img src="img/foto-2-min.jpg" alt="Central Termotasajero" style="width:100%;max-width:800px;display:block;margin:0 auto;border-radius:8px;">
+                    </div>
+          </ul>
+          <p><strong>2. Centrales termoeléctricas del petróleo:</strong> Utilizan derivados del petróleo para generar calor, suelen utilizarse como centrales de respaldo o donde no se encuentra gas natural. Tienen costos de operación altos y un impacto ambiental considerable.</p>
+          <p><strong>Ejemplo:</strong> Termocandelaria es una planta térmica localizada en el sector Mamonal de Cartagena. Cuenta con turbinas de gas de Westinghouse W501F. Usa el gas natural como combustible preferente o el diésel que es derivado del petróleo. Tiene una capacidad instalada de 314 MW (2 unidades de 157 MW c/u) y 566 MW tras el cierre de ciclo combinado con añadidos de 220-252 netos. Tiene una eficiencia térmica con un paso de 34% en un ciclo abierto a 50-53% en ciclo combinado. Tuvo una inversión entre US $232 M - US $258 M.</p>
+                    <div style="text-align:center;margin:30px 0 0 0;">
+                      <img src="img/1-1536x1151.jpg" alt="Central Termoeléctrica Termotasajero" style="width:100%;max-width:800px;display:block;margin:0 auto;border-radius:8px;">
+                    </div>
+          <p><strong>3. Centrales de ciclo combinado:</strong> Utilizan combustibles fósiles para generar energía eléctrica, pero emplean dos turbinas (una de gas y otra de vapor) que trabajan en conjunto para mejorar la eficiencia.</p>
+          <p><strong>Ejemplo:</strong> <b>TEBSA : Central termoeléctrica a gas natural (ciclo combinado)</b><br>
+            Termobarranquilla SA Empresa de servicios públicos es una central térmica ubicada en Soledad, Atlántico en la costa norte de Colombia. La planta tiene la mayor capacidad de generación instalada en Colombia, con 918 MW. Su capacidad instalada es de 918 MW, en condiciones normales, más del 10% de la demanda nacional y el 50% de la demanda del Caribe colombiano.<br>
+            La planta está constituida por un gran bloque de ciclo combinado, el cual está conformado por cinco turbinas de gas [GT11, GT12, GT13, GT21 y GT22] que operan con dos turbinas de vapor [ST14 y ST24], el cual tiene una capacidad de generación de 791 MW. La planta también cuenta con dos unidades a vapor que operan bajo un ciclo Rankine regenerativo. Estas unidades tienen una capacidad de generación declarada de 64 MW la unidad 3 y 63 MW la unidad 4.
+          </p>
+          <!-- Imagen de TEBSA debajo del texto -->
+          <!-- Estadísticas de TEBSA septiembre 2025 -->
+          <div style="text-align:center;margin:32px 0 0 0;">
+            <img src="img\image.png" alt="Estadísticas TEBSA septiembre 2025" style="width:100%;max-width:600px;display:block;margin:0 auto 12px auto;">
+            <div style="font-weight:bold;margin-bottom:8px;">Estadísticas de septiembre de 2025</div>
+            <ul style="text-align:left;max-width:700px;margin:0 auto;font-size:1.05em;">
+              <li>La disponibilidad real significa que la planta estuvo disponible para generar energía el 98.96% del tiempo.</li>
+              <li>El factor de utilización indica el porcentaje de la capacidad máxima realmente usado, si TEBSA puede generar un 100%, la planta estuvo generando menos de la mitad de su capacidad máxima.</li>
+              <li>La generación es la cantidad de energía eléctrica que TEBSA produjo durante el mes de septiembre del 2025.</li>
+              <li>El consumo de gas fue la cantidad de gas natural que consume la termoeléctrica durante el mes ya mencionado. Las unidades GBTU significan Giga British Thermal Units, unidad de medida de energía presente en el gas.</li>
+              <li>Consumo TEBSA/consumo de gas de plantas en Colombia significa que TEBSA solo consumió el 37.39% (dato consignado en la imagen) del gas total por todas las termoeléctricas del país.</li>
+            </ul>
+          </div>
+          <img src="img\Captura de pantalla 2025-12-01 222246.png" alt="Estadísticas TEBSA septiembre 2025" style="width:100%;max-width:600px;display:block;margin:0 auto 12px auto;">
+        </div>
+      </section>
+
+
+        <section id="centrales-hidroelectricas">
+          <h2>Centrales hidroeléctricas</h2>
+          <div class="section-content">
+            <p><strong>Centrales hidroeléctricas</strong></p>
+            <p>Son instalaciones que utilizan la energía del agua en movimiento para generar electricidad. Se transforma la energía potencial y la energía cinética del agua en energía mecánica y luego en energía eléctrica.</p>
+            <h3>Funcionamiento</h3>
+            <ul>
+              <li>Se encuentra un lugar estratégico donde se puede captar una gran cantidad de agua en movimiento. Esto se hace mediante una represa que controla el flujo de agua.</li>
+              <li>El agua se dirige por un canal de conducción que guía el agua hasta la central hidroeléctrica.</li>
+              <li>El agua llega a unas turbina hidráulicas a través de la tubería que se activan con el flujo del agua.</li>
+              <li>Las turbinas están conectadas a los generadores que se llaman alternadores, que hacen que se produzca electricidad cuando el agua hacer girar turbinas hidráulicas.</li>
+              <li>La electricidad que se genera primero es corriente alterna, la cual suele tener voltaje bajo, por lo que se usa un transformador para aumentar el voltaje y adecuarlo para la transmisión a larga distancia.</li>
+            </ul>
+            <h3>Características</h3>
+            <ul>
+              <li>Funciona con el recurso natural agua que se  renueva en un ciclo hidrológico.</li>
+              <li>Es una de las fuentes más eficientes.</li>
+              <li>Necesitan un río caudaloso, una caída de agua o un embalse que permita generar suficiente presión.</li>
+              <li>Su infraestructura externa incluye: presa, conductos forzados, turbinas, generadores, transformadores y canales de desagüe.</li>
+              <li>Se puede controlar cuánta energía producen abriendo o cerrando compuertas según la demanda eléctrica.</li>
+              <li>Proporciona energía estable.</li>
+              <li>Requiere una gran inversión, pero su mantenimiento es relativamente bajo.</li>
+              <li>Tiene una larga vida útil con un funcionamiento entre los 50  y 100 años con buen mantenimiento.</li>
+              <li>No producen gases contaminantes durante su operación, es considerado energía limpia.</li>
+            </ul>
+            <h3>Tipos de centrales hidroeléctricas</h3>
+            <p><strong>Centrales de agua fluyente:</strong> Utilizan el flujo constante de agua de ríos o arroyos, sin usar embalses, el agua se deriva mediante un canal y se dirige por una tubería hasta una turbina que genera electricidad. Operan de forma continua porque no tiene capacidad de almacenar agua al no disponer de embalse. Las turbinas pueden ser de eje vertical cuando el río tiene una pendiente fuerte y horizontal cuando la pendiente del río es baja.</p>
+            <h4>Ejemplo</h4>
+            <p><strong>PCH el Edén</strong>, es una central hidroeléctrica de agua fluyente, se encuentra en el río La Miel, una cuenca en el oriente del departamento de Caldas, municipios como Pensilvania, Marquetalia y Manzanares. Tiene una potencia instalada nominal de 19.9 MW y funciona con dos turbinas de Pelton.<br>
+            Tiene una conducción de agua de 6.7 km desde la captación hasta la casa de máquinas con una caída de 430 m.<br>
+            Se reporta una generación anual aproximada de 27,2 GWh.</p>
+                      <div style="text-align:center; margin:32px 0 0 0;">
+                        <img src="img/hidro.png" alt="Central hidroeléctrica" style="width:100%; max-width:600px; display:block; margin:0 auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+          <div class="hidro-subsection">
+            <h4>Central de embalse</h4>
+            <p>Se utiliza un embalse para almacenar agua e ir graduando el caudal que pasa por la turbina. Para esto se requiere una inversión mayor.</p>
+            <div class="hidro-ejemplo">
+              <strong>Ejemplo:</strong> <b>Central hidroeléctrica Del Guavio</b><br>
+              Es la mayor central de embalse en Colombia, ubicada en el sector Mambita, municipio de Ubalá. Tiene una capacidad instalada de aproximadamente 1260 MW distribuida en cinco unidades, con un embalse de gran volumen que le da capacidad de regular caudales y generar energía firme para el sistema interconectado nacional.<br>
+              El embalse permite almacenar agua y generar de forma más constante, el salto y turbinas Pelton permiten gran cantidad de potencia.<br>
+              Tiene una generación media anual de 5700-5900 GWh/año, su embalse es de 950 millones m³, la altura de la presa es de 243 m y el salto nominal es de 1100.
+            </div>
+            <div style="text-align:center; margin:32px 0 0 0;">
+              <img src="img/hidro2.png" alt="Central hidroeléctrica Del Guavio" style="width:100%; max-width:600px; display:block; margin:0 auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+            </div>
+          </div>
+                      </div>
+                      </div>
+          </div>
+          
+        </section>
+
+          <div class="hidro-subsection">
+            <h4>Central de bombeo o reversibles</h4>
+            <p>Este tipo de central puede transformar la energía potencial del agua en electricidad, y también hacer el proceso inverso: aumentar la energía potencial del agua consumiendo energía eléctrica, utilizándose como método de almacenamiento. Esto se hace para satisfacer la demanda energética en horas pico y almacenar energía en horas valle.</p>
+            <div class="hidro-ejemplo">
+              <strong>Ejemplo:</strong> <b>Complejo hidroeléctrico Río Grande</b><br>
+              Es una central reversible con casa de máquinas en caverna, ubicada en el valle de Calamuchita, provincia de Córdoba, Argentina. Tiene una potencia instalada total de 750 MW, con 4 grupos de turbina-bomba reversibles tipo Francis, también tiene una potencia unitaria de 187,5 MW por unidad y su transformador por unidad es de 210 MVA. Su generación anual media es de 970-977 GWh/año.<br>
+              Su desnivel entre embalses es de 178-185 m, su capacidad de reserva energética es de aproximadamente 100 GWh. El caudal total del proyecto es de 500 m³.<br>
+              El embalse superior tiene una superficie de 1240 ha y una capacidad aproximada de 379 hm³ y el embalse inferior tiene una superficie de 357 ha y capacidad aproximada de 30-35 hm³. La sala de máquinas tiene una profundidad de 226 m bajo el nivel máximo del embalse, las dimensiones aproximadas son de 105 m de longitud x 27 m de ancho x 50 m de altura. Por último, se encuentran dos tubos principales de 330 m de longitud, cuyos diámetros varían entre 7,5 y 3,5 m por cada par de turbinas.
+            </div>
+            <div style="text-align:center; margin:32px 0 0 0;">
+              <img src="img/hidro3.png" alt="Complejo hidroeléctrico Río Grande" style="width:100%; max-width:600px; display:block; margin:0 auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+            </div>
+          </div>
+          <div class="hidro-subsection">
+            <h4>Central de alta presión</h4>
+            <p>Tiene una altura de salto &gt; 100 m hasta 500 m. Usan grandes presas, el agua cae desde alturas muy grandes generando alta presión, utilizan tuberías de presión largas y resistentes, requieren de turbinas Pelton y generan mucha potencia por unidad de agua.</p>
+            <div class="hidro-ejemplo">
+              <strong>Ejemplo:</strong> <b>Hidroituango</b><br>
+              Es una presa enrocada con núcleo impermeable y central subterránea de alta precisión con turbinas tipo Francis. Se encuentra ubicada en el río Cauca, en el municipio Ituango en Antioquía, Colombia.<br>
+              Tiene una potencia instalada total de 2400 MW, con 8 turbinas Francis instaladas en caverna subterránea, con una potencia unitaria de 300 MW.<br>
+              El salto hidráulico nominal es de 197 m, el caudal de diseño por turbinas es de 169 m³/s. El embalse tiene una capacidad total de 2720 millones de m³ con un área inundada reportada de 3800 ha y la altura de la presa es de 225 m con un volumen de relleno de 19-20 millones m³.<br>
+              Hace una generación de 13930 GWh/año de energía media anual y una energía firme reportada en diversas fuentes en torno a 9200 GWh/año.<br>
+              La presa es de tipo enrocado con núcleo de arcilla/tierra con una altura de 225 m, la casa de máquinas es una caverna subterránea de dimensiones: 240 m de longitud x 23 m de ancho x 49 m de altura donde se alojan las 8 unidades.
+            </div>
+            <div style="text-align:center; margin:32px 0 0 0;">
+              <img src="img/central de altapresion.png" alt="Central de alta presión" style="width:100%; max-width:600px; display:block; margin: 0 auto 12px auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+              <img src="img/caltapresion2.png" alt="Central de alta presión 2" style="width:100%; max-width:600px; display:block; margin: 0 auto 12px auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+              <img src="img/caltapresion3.png" alt="Central de alta presión 3" style="width:100%; max-width:600px; display:block; margin: 0 auto 12px auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+              <img src="img/caltapresion4.png" alt="Central de alta presión 4" style="width:100%; max-width:600px; display:block; margin: 0 auto 12px auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+                        </div>
+                        <div class="hidro-subsection">
+                          <h4>Centrales de media presión</h4>
+                          <p>Tiene una altura de salto entre 30 m y 100 m.<br>
+                          Utilizan turbinas Francis, diseñadas para alturas intermedias, requieren menos infraestructura que las de alta presión y pueden ser de embalse o de pasada.</p>
+                          <div class="hidro-ejemplo">
+                            <strong>PCH la cascada</strong><br>
+                            Es una pequeña central hidroeléctrica que aprovecha una conducción de agua y turbina hidráulica. Está ubicada en el municipio de Abejorral, en el departamento de Antioquía, Colombia.<br>
+                            Tiene una potencia instalada de 3,00 MW, un salto neto de 140 m, el caudal es de 2,50 m³/s, la generación media anual reportada es 13,98 GWh/año, y su factor de planta es de 54%.<br>
+                            La PCH capta el agua de la quebrada Yeguas y la conduce 600 metros de conducción hasta la casa de máquina. Luego devuelve el agua a la corriente original. En la central conviven dos casas de máquinas: una antigua con turbinas Pelton y una planta con turbinas Francis nueva de 3 MW.
+                                                    <div>
+                                                      <img src="img/mediapresion.png" alt="Central de media presión" style="width:100%; max-width:600px; display:block; margin: 0 auto 12px auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+                                                    </div>
+                                                    <div class="hidro-subsection">
+                                                      <h4>Centrales de baja presión</h4>
+                                                      <p>Tiene una altura de salto entre 5 m y 30 m.<br>
+                                                      Aprovechan desniveles pequeños y son típicas de zonas de ríos anchos y caudalosos, utilizan turbinas Kaplan, diseñadas para poca presión y mucho caudal, suelen ser centrales de pasada.</p>
+                                                      <div class="hidro-ejemplo">
+                                                        <strong>Ejemplo: PCH Caracolí</strong><br>
+                                                        Es una pequeña central hidroeléctrica de baja potencia, el propietario es la empresa pública de Medellín EPM. Está ubicada en la subregión del Magdalena medio en Antioquia.<br>
+                                                        Tiene una potencia instalada de 3,75 MW, antes contaba con dos unidades de generación antiguas de 2,6 MW, luego de la rehabilitación se instaló una turbina tipo francés de eje horizontal para aprovechar el caudal concesionado.
+                                                      </div>
+                                                    </div>
+                                                    <div>
+                                                      <img src="img/bajapresion.png" alt="Central de baja presión" style="width:100%; max-width:600px; display:block; margin: 0 auto 12px auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+                                                    </div>
+                                                    <div class="hidro-subsection">
+                                                      <h4>Centrales de muy baja presión</h4>
+                                                      <p>Tiene una altura de salto de &lt; 5 m.<br>
+                                                      No requiere presas grandes, funciona con caídas mínimas y alto caudal o incluso corrientes lentas y se usan turbinas de hélice, Kaplan modificadas o turbinas especiales de flujo cruzado, normalmente se hace utilidad en comunidades rurales.</p>
+                                                      <div class="hidro-ejemplo">
+                                                        <strong>Ejemplo: Jirau Hydroelectric Plant, Brasil</strong><br>
+                                                        Es un tipo de presa de enrocado con núcleo asfáltico y central run-of-river con turbinas bulb de gran tamaño. Tiene una potencia instalada de 3.750 MW y el salto bruto de diseño es de 15.4 m, la generación anual es de 19.63 GWh/año.<br>
+                                                        Tiene 50 turbinas bulb, distribuidas en dos casas de máquinas, la potencia unitaria es de 75 MW por turbina. El salto nominal es de 15.4 m y el tipo de presa es de dique de enrocado con núcleo.
+                                                                                                              <div style="text-align:center; margin: 0 auto 12px auto;">
+                                                                                                                <img src="img/muybajapresion.png" alt="Central de muy baja presión" style="width:100%; max-width:600px; display:block; margin: 0 auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+                                                                                                                                                                                                                            <p style="margin-top:18px;">Existen otros tipos de centrales hidroeléctricas como las centrales mareomotrices, las centrales mareomotrices sumergidas y las centrales que aprovechan el movimiento de las olas. Y también están las ubicadas al aire libre o en cavernas.</p>
+                                                                                                              </div>
+                                                      </div>
+                                                    </div>
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                          </div>
+                          </div>
+                        </div>
+            </div>
+          </div>
+          </div>
+       </section>
+        <h2>Centrales eólicas</h2>
+        <div class="section-content">
+          <h3>Centrales eólicas</h3>
+          <p>Es una forma de energía renovable que se obtiene a partir del viento, mediante el aprovechamiento de la energía cinética generada por los movimientos de las masas del aire. También se llama parque eólico porque es una zona que contiene múltiples aerogeneradores que cumplen el proceso mencionado anteriormente.</p>
+          <h4>Funcionamiento</h4>
+          <p>Un aerogenerador está compuesto por una torre, una góndola y un rotor en su parte superior con múltiples palas, orientadas en la dirección del viento. Las hélices giran alrededor de un eje horizontal que actúa sobre un generador de electricidad. La energía renovable producida por cada aerogenerador se transporta hasta el nivel del suelo a través de cables eléctricos subterráneos que la conducen hasta el transformador de la central eólica, para finalmente hacer el respectivo proceso de redistribución.</p>
+          <h4>Características</h4>
+          <ul>
+            <li>La cantidad de aerogeneradores de un parque eólico varía dependiendo de la extensión de la zona, las características del viento y el presupuesto destinado.</li>
+            <li>Para establecer un parque eólico es necesario un estudio del viento con duración bastante extensa.</li>
+            <li>Las centrales eólicas son instaladas en áreas rurales que no posean población, y a pesar de ser muy grandes no irrumpen las actividades de ganadería y agrícolas.</li>
+          </ul>
+          <h4>Tipos</h4>
+          <b>On-shore</b>
+          <p>Están ubicados en tierra a no menos de 3 kilómetros de la costa y se alimentan de las corrientes de aire terrestres, su costo de instalación y mantenimiento es bajo.</p>
+          <b>Ejemplo</b>
+          <p>El Parque eólico Guajira I, se ubica en el municipio de Uribia, en el norte del departamento de La Guajira, tuvo una inversión de 31,7 millones de euros. Tiene 10 aerogeneradores de la marca Vestas, cada uno con un altura de torre de 78 m y una potencia nominal unitaria de 2 MW. Tiene una capacidad instalada total de 20 MW y aproximadamente ocupa 5,5 hectáreas. Según la información la producción de energía limpia de Guajira evita la emisión de alrededor de 136 toneladas de CO2.</p>
+          <div style="text-align:center; margin: 24px 0 0 0;">
+            <img src="img/eolica.png" alt="Central eólica" style="width:100%; max-width:600px; display:block; margin:0 auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+          </div>
+
+          <h4>Offshore</h4>
+          <p>Instaladas en el mar, generalmente a varios kilómetros de la costa. Hay mayor generación por los vientos más fuertes y constantes. Sus costos de instalación son altos y requieren de estructuras contra la corrosión y el oleaje.</p>
+          <h5>Ejemplo</h5>
+          <p><b>Viento Azul Biobio</b><br>
+          Es un consorcio conformado por la empresa británica 17 energy y la chilena SC Power, cuyo objetivo es desarrollar un parque eólico marino a escala comercial en la costa de la región de Biobio, Chile. Se planea que contenga una capacidad entre 500 MW y 1 GW, usando 64 aerogeneradores flotantes de 15 MW cada uno. Se estima que el proyecto entre en operación en 2030 y tenga una vida útil entre 25 y 30 años. Las costas de Biobío presentan buen recurso eólico marítimo, con vientos favorables y constancia, lo que genera confiabilidad en operación. El proyecto aún está en etapa de planificación, permisos y evaluación; todavía no hay parque operativo. Para llevar a cabo este tipo de proyectos se requiere concesión marítima, evaluación ambiental, adecuaciones de redes eléctricas, inversiones en infraestructura, etc.</p>
+
+          <h4>Near-shore</h4>
+          <p>Se localizan muy cerca de la costa, pero aún en tierra o aguas muy poco profundas.</p>
+          <h5>Ejemplo</h5>
+          <p><b>Block Island Wind Farm</b><br>
+          Es el primer parque eólico marino comercial de los Estados Unidos, es un proyecto near-shore que demostró la viabilidad técnica, ambiental y social de la eólica marina. Está compuesta de 5 aerogeneradores, su modelo y potencia unitaria es de 5 x 6 MW y su potencia instalada total es de 30 MW. Su altura hub es 100 m y el diámetro del rotor es de 150 m, la producción anual neta es de 125 GWh/año, con un factor de capacidad entre 45-48%. La transmisión se hace por medio de un cable submarino que conecta los aerogeneradores al sistema eléctrico continental.</p>
+          <div style="text-align:center; margin: 24px 0 0 0;">
+            <img src="img/eolica2.png" alt="Parque eólico marino" style="width:100%; max-width:600px; display:block; margin:0 auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+          </div>
+        </div>
+      </section>
+
+       <section id="centrales-solares">
+        <h2>Centrales solares</h2>
+        <div class="section-content">
+          <h3>Centrales solares</h3>
+          <p>Una central solar es una instalación que permite la conversión de la radiación solar, compuesta por luz, calor y radiación ultravioleta, en energía eléctrica.</p>
+          <h4>Funcionamiento</h4>
+          <ul>
+            <li>Los paneles captan la radiación solar.</li>
+            <li>Cada panel genera corriente continua.</li>
+            <li>Un inversor convierte esa energía en corriente alterna.</li>
+            <li>La energía se envía a la red eléctrica.</li>
+          </ul>
+          <h4>Tipos</h4>
+          <h4>Centrales solares fotovoltaicas</h4>
+          <p>Transforman directamente la luz solar en electricidad mediante paneles solares. Existen varios tipos de centrales solares fotovoltaicas:</p>
+          <ul>
+            <li><b>Centrales fotovoltaicas en tierra:</b> Producen la electricidad para la red nacional.</li>
+            <li><b>Centrales fotovoltaicas en cubiertas:</b> Instaladas en techos de industrias, comercios o casas.</li>
+            <li><b>Centrales fotovoltaicas flotantes:</b> Paneles sobre lagos, represas o embalses.</li>
+          </ul>
+          <h5>Ejemplo</h5>
+          <p><b>Parque solar Guayepo I y II</b><br>
+          Es uno de los parques fotovoltaicos más grandes de Colombia y Latinoamérica, desarrollado por Enel Green Power en los municipios de Ponedera y Sabanalarga, en el departamento del Atlántico, Colombia. Tiene una capacidad instalada de 486,7 MW de capacidad instalada declarada y su capacidad efectiva neta reportada es de 370 MWac, son 820.600 paneles instalados, además de que su ocupación es de 1100 hectáreas. La producción estimada anual es de 1.030 GWh/año, equivalente al suministro aproximado para 1,5 millones de personas.</p>
+          <div style="text-align:center; margin: 24px 0 0 0;">
+            <img src="img/solar.png" alt="Parque solar Guayepo" style="width:100%; max-width:600px; display:block; margin:0 auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+          </div>
+
+          <h4>Centrales solares termoeléctricas</h4>
+          <p>Estas usan espejos para concentrar la luz solar, generar calor, producir vapor y mover una turbina eléctrica. Tipos:</p>
+          <ul>
+            <li><b>Centrales de colectores cilindro parabólicos:</b> Es una fila de espejos curvos que calientan un fluido.</li>
+            <li><b>Centrales de torre solar:</b> Son miles de espejos planos que apuntan la luz a una torre alta y pueden alcanzar temperaturas muy altas.</li>
+            <li><b>Centrales de discos parabólicos:</b> Se usa un gran disco parabólico que concentra la luz en un motor Stirling.</li>
+            <li><b>Centrales Fresnel:</b> Son espejos planos y económicos que imitan el efecto parabólico.</li>
+          </ul>
+          <h5>Ejemplo</h5>
+          <p><b>Planta solar Termosolar Cerro Dominador</b><br>
+          Es un complejo energético situado en la región Antofagasta que combina una planta termosolar de torre de 110 MW con una planta fotovoltaica de 100 MW. La planta termosolar incorpora el almacenamiento térmico en sales fundidas que le proporciona 17.5 horas de almacenamiento, permitiendo generación continuada fuera de horas de insolación. Tiene una capacidad de 110 MW + 100 MW para un total de 210 MW, tiene un almacenamiento térmico de sales fundidas, con 17.5 horas de capacidad de almacenamiento térmico y su área de campo solar es de 700 hectáreas y 10.600 heliostatos.</p>
+          <div style="text-align:center; margin: 24px 0 0 0;">
+            <img src="img/solar2.png" alt="Planta solar Cerro Dominador" style="width:100%; max-width:600px; display:block; margin:0 auto; border-radius:8px; box-shadow:0 2px 12px #0003;">
+          </div>
+        </div>
+      </section>
+
+       <section id="centrales-nucleares">
+        <h2>Centrales nucleares</h2>
+        <div class="section-content">
+          <p><strong>Centrales térmicas nucleares:</strong> Son instalaciones industriales que mediante reacciones de fisión en la vasija de un reactor nuclear generan electricidad. Su elemento clave es el reactor, donde se aloja el combustible nuclear y donde se producen las reacciones nucleares.</p>
+          <p><strong>Ejemplo</strong><br>
+          <b>Central Nuclear Atucha I</b><br>
+          Es la primera central nuclear de potencia en Latinoamérica, está ubicada en la localidad de Lima, provincia de Buenos Aires, Argentina.<br>
+          El reactor de esta central es del tipo PHWR (Pressurized Heavy Water Reactor), emplea agua pesada como moderador y refrigerante y usa un combustible uranio natural o levemente enriquecido.<br>
+          Tiene una potencia eléctrica bruta de 362 MWe, y una potencia térmica del reactor de 1.179 MWt, usa como tipo de combustible el uranio natural y como moderador el agua pesada.<br>
+          La capacidad neta reportada suele ser de 340 MWe. Según los reportes en 2024 los reactores nucleares en Argentina en conjunto generaron 10.499 GWh, lo que llevó a que hubiera un 8% de electricidad generada en el país.
+          </p>
+          <!-- Tablas de datos Atucha I -->
+          <div style="overflow-x:auto; margin: 24px 0;">
+            <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; min-width:350px; margin-bottom:24px;">
+              <tr><td><b>Capacidad neta</b></td><td>340 MWe</td></tr>
+              <tr><td><b>Capacidad bruta</b></td><td>362 MWe</td></tr>
+              <tr><td><b>Capacidad térmica</b></td><td>1179 MWt</td></tr>
+              <tr><td><b>Capacidad neta de diseño</b></td><td>329 MWe</td></tr>
+            </table>
+            <div style="font-weight:bold; margin-bottom:8px;">Historial reactor últimos tres años</div>
+            <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; min-width:700px;">
+              <tr>
+                <th>Año</th>
+                <th>Potencia de la unidad de referencia (MWe)</th>
+                <th>Tiempo anual en línea (horas)</th>
+                <th>Electricidad suministrada (GWh)</th>
+                <th>Factor de operación (%)</th>
+                <th>Disponibilidad de energía anual (%)</th>
+                <th>Disponibilidad de energía acumulada (%)</th>
+                <th>Factor de carga anual (%)</th>
+                <th>Factor de carga acumulada (%)</th>
+              </tr>
+              <tr>
+                <td>2022</td><td>340</td><td>6528</td><td>2034.01</td><td>74.50</td><td>68.30</td><td>74.40</td><td>68.30</td><td>72.50</td>
+              </tr>
+              <tr>
+                <td>2023</td><td>340</td><td>6855</td><td>2179.12</td><td>78.20</td><td>73.80</td><td>74.40</td><td>73.80</td><td>72.50</td>
+              </tr>
+              <tr>
+                <td>2024</td><td>340</td><td>6284</td><td>2055.74</td><td>71.50</td><td>68.80</td><td>74.30</td><td>68.80</td><td>72.50</td>
+              </tr>
+            </table>
+          </div>
+          <!-- Gráficos históricos Atucha I -->
+          <div class="nuclear-graphs">
+            <img src="img/Grafico nuclear.png" alt="Electricidad suministrada Atucha I">
+            <img src="img/nuclearx2.png" alt="Disponibilidad energética Atucha I">
+          </div>
+          <div class="nuclear-graph-large">
+            <img src="img/nuclearx3.png" alt="Histórico Atucha I" style="width:100%; max-width:700px; height:auto; border:1px solid #ccc; border-radius:8px; background:#fff;">
+          </div>
+      </section>
+
+      <section id="no-renovables">
+        <h1>Tipos de Sistemas</h1>
+        <div class="section-content">
+          <h2>Sistemas renovables</h2>
+          <p>
+            Es la energía que se obtiene a partir de fuentes naturales, como el sol, el viento, el agua o la biomasa, sin agotar recursos y con un impacto ambiental muy bajo, ya que son fuentes que se renuevan constantemente.
+          </p>
+          <h4>Componentes</h4>
+          <ul>
+            <li><strong>Fuentes de energía:</strong> Se provee el recurso, como la radiación solar, el viento, el agua en movimiento, la biomasa y el calor del subsuelo.</li>
+            <li><strong>Convertidor de energía:</strong> Los dispositivos de cada central transforman la energía primaria en electricidad, como los paneles fotovoltaicos, los aerogeneradores, las turbinas hidráulicas, las turbinas de vapor para biomasa y las turbinas geotérmicas.</li>
+            <li><strong>Sistemas de control:</strong> Se regula la operación, el voltaje, la frecuencia y la protección.</li>
+            <li><strong>Sistemas de almacenamiento:</strong> Aquí trabajan las baterías, las turbinas reversibles, los volantes de inercia y el hidrógeno verde.</li>
+            <li><strong>Inversor o generador:</strong> Convierte la energía en electricidad apta para uso doméstico.</li>
+            <li><strong>Sistema de distribución:</strong> Aquí interviene el cableado, los transformadores y las protecciones.</li>
+          </ul>
+          <h4>Tipos</h4>
+          <ul>
+            <li>Solar fotovoltaica</li>
+            <li>Energía Eólica</li>
+            <li>Hidroeléctrica</li>
+            <li>Biomasa</li>
+            <li>Geotérmica</li>
+            <li>Energía mareomotriz</li>
+          </ul>
+          <h4>Datos de energía renovable 2024-2025</h4>
+          <p>
+            La fuente de energía con mayor distribución fue la generación hidráulica con un 91.56%, equivalente a 163.64 GWH-día promedio, presentando un aumento de 15.1%.
+          </p>
+          <div style="overflow-x:auto;">
+            <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; margin-top:16px; min-width:600px;">
+              <thead>
+                <tr>
+                  <th>Tipo de fuente de energía</th>
+                  <th>Generación de 01-12-2024 hasta 30-12-2024 (GWh-día)</th>
+                  <th>Generación de 01-01-2025 hasta 31-01-2025 (GWh-día)</th>
+                  <th>Participación a 31-01-2025</th>
+                  <th>Variación de generación (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Biomasa</td>
+                  <td>2.767</td>
+                  <td>2.832</td>
+                  <td>1.58%</td>
+                  <td>2.36%</td>
+                </tr>
+                <tr>
+                  <td>Eólica</td>
+                  <td>0.314</td>
+                  <td>0.402</td>
+                  <td>0.22%</td>
+                  <td>27.99%</td>
+                </tr>
+                <tr>
+                  <td>Hidráulica</td>
+                  <td>142.164</td>
+                  <td>142.164</td>
+                  <td>91.56%</td>
+                  <td>15.10%</td>
+                </tr>
+                <tr>
+                  <td>Solar</td>
+                  <td>10.211</td>
+                  <td>10.211</td>
+                  <td>6.63%</td>
+                  <td>15.95%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Por fuente de energía, las plantas hidráulicas con embalses fueron las mayores aportantes con un 83.08 %, equivalente a 148.47 GWh-día promedio creciendo 17.42 %, mientras que las plantas filo de agua aportaron el 8.48 % equivalente a 15.16 GWh-día, 3.51 %. Con respecto a las Fuentes de Energía Renovables No Convencionales se tuvo que durante el mes de enero de 2025 las plantas solares generaron en promedio 11.84 GWh-día, representando un 6.62 % del total de la generación renovable 15.95 % más respecto al mes de diciembre de 2024, mientras que las plantas eólicas aportaron un 0.22 % de la generación renovable equivalente a 0.4 GWh-día, 27.99 % más respecto a diciembre de 2024.
+          </p>
+          <!-- Aquí va la tabla de sistemas no renovables -->
+          <h2>Sistemas no renovables</h2>
+          <p>
+            Ellos utilizan recursos energéticos limitados, como combustibles fósiles y la energía nuclear para producir electricidad, generalmente funcionan mediante la quema de combustible para calentar agua, generar vapor y hacer girar turbinas que impulsan generadores. Estas fuentes no se regeneran naturalmente a la misma velocidad con la que se consumen, lo que significa que se agotan con el tiempo.
+          </p>
+          <h4>Componentes</h4>
+          <ul>
+            <li>Caldera</li>
+            <li>Turbina</li>
+            <li>Generador eléctrico</li>
+            <li>Sistema de combustión</li>
+            <li>Sistema de control</li>
+            <li>Transformadores y líneas eléctricas</li>
+            <li>Sistema de refrigeración</li>
+          </ul>
+          <h4>Tipos</h4>
+          <ul>
+            <li>Centrales termoeléctricas</li>
+            <li>Centrales de ciclo combinado</li>
+            <li>Centrales nucleares</li>
+            <li>Centrales termoeléctricas de biomasa fósil</li>
+          </ul>
+          <!-- Tabla de datos no renovables -->
+          <h4>Datos 2024-2025</h4>
+          <div style="overflow-x:auto;">
+            <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; margin-top:16px; min-width:600px;">
+              <thead>
+                <tr>
+                  <th>Subtipo de fuente de energía</th>
+                  <th>Generación de 01-12-2024 hasta 30-12-2024 (GWh-día)</th>
+                  <th>Generación de 01-01-2025 hasta 31-01-2025 (GWh-día)</th>
+                  <th>Participación a 31-01-2025</th>
+                  <th>Variación de generación (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Carbón</td>
+                  <td>29.828</td>
+                  <td>24.948</td>
+                  <td>50.42%</td>
+                  <td>-16.36%</td>
+                </tr>
+                <tr>
+                  <td>Gas importado</td>
+                  <td>29.323</td>
+                  <td>13.857</td>
+                  <td>28.00%</td>
+                  <td>-52.74%</td>
+                </tr>
+                <tr>
+                  <td>Gas nacional</td>
+                  <td>15.326</td>
+                  <td>9.780</td>
+                  <td>19.76%</td>
+                  <td>-36.19%</td>
+                </tr>
+                <tr>
+                  <td>Líquidos</td>
+                  <td>1.427</td>
+                  <td>0.899</td>
+                  <td>1.28%</td>
+                  <td>-37.03%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            El total de la generación con recursos no renovables para el mes de enero fue de 49.48 GWh-día promedio.<br>
+            Por fuente de energía, la generación con carbón representó un 50.42 %, equivalente a 24.95 GWh-día promedio, 16.36 % menos con relación a su respectivo mes anterior, seguido por el gas importado con un 28.0%, equivalente a 13.86 GWh-día promedio. Por último, el gas nacional tuvo una participación de 19.76 %, equivalente a 9.78 GWh-día promedio.
+          </p>
+          <!-- ...resto de la sección... -->
+<!-- ...existing code... -->
+      <section id="formulas">
+        <h1>Fórmulas</h1>
+        <div class="section-content">
+          <h2>Fórmulas de Potencia</h2>
+          <ul>
+            <li>
+              <strong>Potencia Activa (P):</strong> <br>
+              P = Vrms · Irms · cos(φ)<br>
+              Vrms: Voltaje eficaz<br>
+              Irms: Corriente eficaz<br>
+              cos(φ): Factor de potencia<br>
+              Determina cuánta potencia real está entregando un sistema de corriente alterna.
+            </li>
+            <li>
+              <strong>Potencia Reactiva (Q):</strong> <br>
+              Q = Vrms · Irms · sen(φ)<br>
+              Q: Potencia reactiva (no realiza trabajo útil, asociada a bobinas y capacitores)<br>
+              V: Voltaje<br>
+              I: Corriente<br>
+              sen(φ): Componente reactiva
+            </li>
+            <li>
+              <strong>Potencia Aparente (S):</strong> <br>
+              S = Vrms · Irms<br>
+              S: Potencia aparente (combinación de activa y reactiva, capacidad total del sistema)<br>
+              V: Voltaje<br>
+              I: Corriente
+            </li>
+            <li>
+              <strong>Factor de Potencia (fp):</strong> <br>
+              fp = cos(φ) = P/S<br>
+              fp: Porcentaje de la potencia realmente útil, indica el desfase entre voltaje y corriente.
+            </li>
+          </ul>
+
+          <h2>Fórmulas Generadores Eléctricos</h2>
+          <ul>
+            <li>
+              <strong>Ley de Faraday:</strong> <br>
+              E = N · (dΦ/dt)<br>
+              E: Fuerza electromotriz inducida<br>
+              N: Número de espiras<br>
+              Φ: Flujo magnético<br>
+              dΦ/dt: Rapidez del cambio del flujo en el tiempo
+            </li>
+            <li>
+              <strong>FEM RMS generada en un alternador:</strong> <br>
+              E = 4.44 · f · N · Φ<br>
+              E: FEM generada (RMS)<br>
+              f: Frecuencia eléctrica (Hz)<br>
+              N: Número de espiras por fase<br>
+              Φ: Flujo magnético
+            </li>
+            <li>
+              <strong>Frecuencia generada:</strong> <br>
+              f = (p · n) / 120<br>
+              f: Frecuencia eléctrica (Hz)<br>
+              p: Número de polos<br>
+              n: Velocidad del rotor (rpm)
+            </li>
+            <li>
+              <strong>Velocidad sincrónica:</strong> <br>
+              ns = 120 · f / p<br>
+              ns: Velocidad sincrónica (rpm)<br>
+              f: Frecuencia eléctrica (Hz)<br>
+              p: Número de polos
+            </li>
+          </ul>
+
+          <h2>Fórmulas Turbinas y Conversión Mecánica-Eléctrica</h2>
+          <ul>
+            <li>
+              <strong>Potencia Mecánica:</strong> <br>
+              Pm = T · ω<br>
+              Pm: Potencia mecánica (W)<br>
+              T: Torque (N·m)<br>
+              ω: Velocidad angular (rad/s)
+            </li>
+            <li>
+              <strong>Velocidad angular:</strong> <br>
+              ω = 2πf<br>
+              ω: Velocidad angular (rad/s)<br>
+              π: 3.1416<br>
+              f: Frecuencia eléctrica (Hz)
+            </li>
+            <li>
+              <strong>Eficiencia del generador:</strong> <br>
+              η = P<sub>eléctrica</sub> / P<sub>mecánica</sub><br>
+              η: Eficiencia del generador<br>
+              P<sub>eléctrica</sub>: Potencia eléctrica de salida<br>
+              P<sub>mecánica</sub>: Potencia mecánica entregada al eje
+            </li>
+          </ul>
+
+          <h2>Fórmulas Sistemas de Generación</h2>
+          <ul>
+            <li>
+              <strong>Potencia hidráulica:</strong> <br>
+              P = η · ρ · g · Q · h<br>
+              P: Potencia hidráulica (W)<br>
+              η: Eficiencia (0-1)<br>
+              ρ: Densidad del agua (1000 kg/m³)<br>
+              g: Gravedad<br>
+              Q: Caudal (m³/s)<br>
+              h: Altura de caída (m)
+            </li>
+            <li>
+              <strong>Potencia total en el viento (generación eólica):</strong> <br>
+              P<sub>v</sub> = ½ · ρ · A · v³<br>
+              P<sub>v</sub>: Potencia total en el viento (W)<br>
+              ρ: Densidad del aire (1.225 kg/m³)<br>
+              A: Área del rotor<br>
+              v: Velocidad del viento (m/s)
+            </li>
+            <li>
+              <strong>Potencia extraída por el rotor de un aerogenerador:</strong> <br>
+              P<sub>t</sub> = C<sub>p</sub> · ½ · ρ · A · v³<br>
+              P<sub>t</sub>: Potencia tomada por el rotor<br>
+              C<sub>p</sub>: Coeficiente de potencia (0-0.59)
+            </li>
+            <li>
+              <strong>Potencia de un panel solar:</strong> <br>
+              P = V · I<br>
+              P: Potencia eléctrica (W)<br>
+              V: Voltaje generado (V)<br>
+              I: Corriente producida (A)
+            </li>
+            <li>
+              <strong>Eficiencia del panel solar:</strong> <br>
+              η = P<sub>salida</sub> / (A · G)<br>
+              η: Eficiencia del panel<br>
+              P<sub>salida</sub>: Potencia eléctrica generada (W)<br>
+              A: Área del panel (m²)<br>
+              G: Irradiancia solar (W/m²)
+            </li>
+          </ul>
+
+          <h2>Fórmulas Transformadores</h2>
+          <ul>
+            <li>
+              <strong>Relación de transformación:</strong> <br>
+              V<sub>1</sub>/V<sub>2</sub> = N<sub>1</sub>/N<sub>2</sub><br>
+              V<sub>1</sub>: Voltaje primario<br>
+              V<sub>2</sub>: Voltaje secundario<br>
+              N<sub>1</sub>: Número de espiras primario<br>
+              N<sub>2</sub>: Número de espiras secundario
+            </li>
+            <li>
+              <strong>Potencia en el transformador:</strong> <br>
+              S = V<sub>1</sub>·I<sub>1</sub> = V<sub>2</sub>·I<sub>2</sub><br>
+              S: Potencia aparente<br>
+              V<sub>1</sub>, I<sub>1</sub>: Voltaje y corriente primarios<br>
+              V<sub>2</sub>, I<sub>2</sub>: Voltaje y corriente secundarios
+            </li>
+            <li>
+              <strong>Pérdidas totales del transformador:</strong> <br>
+              P<sub>pérdidas</sub> = P<sub>núcleo</sub> + P<sub>cobre</sub>
+            </li>
+          </ul>
+
+          <h2>Fórmulas Líneas Eléctricas</h2>
+          <ul>
+            <li>
+              <strong>Caída de tensión monofásica:</strong> <br>
+              ΔV = I (R cos(φ) + X sen(φ))<br>
+              ΔV: Caída de tensión<br>
+              I: Corriente<br>
+              R: Resistencia de la línea<br>
+              X: Reactancia<br>
+              φ: Ángulo del factor de potencia
+            </li>
+            <li>
+              <strong>Caída de tensión trifásica:</strong> <br>
+              ΔV = √3 · I (R cos(φ) + X sen(φ))<br>
+              ΔV: Caída de tensión<br>
+              I: Corriente<br>
+              R: Resistencia de la línea<br>
+              X: Reactancia<br>
+              φ: Ángulo del factor de potencia
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <footer>
+      <p>
+        © 2025 Manuela Guioth, Angie Cifuentes — Página
+        Educativa
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página principal</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        background: #000;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra verticalmente */
+        align-items: center;
+      }
+      .personas-container {
+        display: flex;
+        gap: 40px;
+        justify-content: flex-start; /* Aprovecha el lado izquierdo */
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 40px; /* Da espacio a la izquierda */
+        box-sizing: border-box;
+      }
+      .persona-card {
+        background: #111;
+        border-radius: 12px;
+        border: 2px solid #00BFFF;
+        max-width: 350px;
+        width: 100%;
+        height: 480px; /* Menos grande */
+        padding: 32px 24px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+      }
+      .persona-card img {
+        width: 100%;
+        height: 320px; /* Más largo en alto */
+        object-fit: cover;
+        border-radius: 8px;
+        border: 2px solid #00BFFF;
+        margin-bottom: 24px;
+      }
+      .persona-card h2 {
+        color: #00BFFF;
+        margin-bottom: 8px;
+      }
+      .persona-card .programa {
+        color: #00BFFF;
+        font-size: 16px;
+        margin-bottom: 16px;
+        font-weight: 500;
+      }
+      .volver-btn {
+        margin-top: 48px;
+        padding: 12px 32px;
+        background: #00BFFF;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: bold;
+        transition: background 0.2s;
+      }
+      .volver-btn:hover {
+        background: #0080ff;
+      }
+      @media (max-width: 1150px) {
+        .personas-container {
+          max-width: 700px;
+          padding-left: 20px;
+        }
+        .persona-card {
+          max-width: 320px;
+        }
+      }
+      @media (max-width: 900px) {
+        .personas-container {
+          flex-direction: column;
+          align-items: center;
+          gap: 40px;
+          max-width: 400px;
+          padding-left: 0;
+        }
+        .persona-card {
+          max-width: 350px;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Sistemas de generación de energía eléctrica - Parte I</h1>
+        <img src="img/Logo-UTP-NEGRO-294-X-176.png" alt="Logo" class="header-img" />
+      </div>
+    </header>
+    <main>
+      <div class="personas-container">
+        <div class="persona-card">
+          <!-- Si tienes la foto en img/ pon el nombre correcto, por ejemplo: -->
+          <img src="img/1-1536x1151.jpg" alt="Persona 1">
+          <h2>Manuela Guioth</h2>
+          <div class="programa">Programa académico:</div>
+        </div>
+        <div class="persona-card">
+          <!-- Si tienes la foto en img/ pon el nombre correcto, por ejemplo: -->
+          <img src="img/foto-2-min.jpg" alt="Persona 2">
+          <h2>Angie Cifuentes</h2>
+          <div class="programa">Programa académico:</div>
+        </div>
+      </div>
+      <button class="volver-btn" onclick="window.location.href='pagina web fisica.html'">Volver a la página principal</button>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,354 @@
+/* Sección hidroeléctricas: subsecciones y ejemplos */
+.hidro-subsection {
+  margin: 32px 0 0 0;
+  padding: 24px 18px 18px 18px;
+  background: #000 !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.hidro-subsection h4 {
+  margin-top: 0;
+  color: #1a4a7a;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.hidro-ejemplo {
+  margin: 16px 0 0 0;
+  padding: 12px 16px;
+  background: #000 !important;
+  border-left: 4px solid #1a4a7a;
+  border-radius: 6px;
+  font-size: 1em;
+}
+/* Imagen grande centrada bajo los gráficos nucleares */
+.nuclear-graph-large {
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+/* ===== Gráficos históricos Atucha I (Centrales nucleares) ===== */
+.nuclear-graphs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 32px 0 0 0;
+}
+
+.nuclear-graphs img {
+  max-width: 38vw;
+  min-width: 220px;
+  height: 340px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  flex: 1 1 220px;
+}
+
+
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000 !important; /* Fondo negro */
+  color: #e0e0e0;
+  display: flex;
+}
+
+/* Botón de menú */
+#toggle-btn {
+  position: fixed;
+  top: 70px; /* Usar la posición debajo del header */
+  left: 15px;
+  background-color: #000; /* Negro */
+  color: white; /* Corregido: antes estaba incompleto */
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 6px 10px;
+  z-index: 2000; /* Mantener el z-index más alto */
+  transition: background 0.3s;
+}
+#toggle-btn:hover {
+  background-color: #222; /* Negro más claro al pasar el mouse */
+}
+
+/* Sombreado azul eléctrico al hacer clic */
+#toggle-btn:active {
+  background-color: #00BFFF !important;
+  color: #000 !important;
+}
+
+/* Menú lateral */
+aside {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: calc(100% - 60px);
+  background-color: #000 !important; /* Fondo negro */
+  color: #e0e0e0 !important;
+  padding-top: 20px;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  z-index: 1000;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.5); /* Sombra negra */
+  border-right: 2px solid #000;
+}
+
+/* Menú cerrado */
+aside.closed {
+  transform: translateX(-100%);
+}
+
+/* Links del menú */
+aside h2 {
+  text-align: center;
+  color: #fff; /* Letras blancas */
+}
+aside a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff; /* Letras blancas */
+  text-decoration: none;
+  transition: background 0.2s;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+aside a:hover {
+  background-color: #00BFFF !important;
+  color: #000 !important;
+}
+
+/* Contenido principal */
+main {
+  margin-left: 260px;
+  padding: 120px 60px 60px;
+  transition: margin-left 0.3s ease;
+  flex-grow: 1;
+}
+aside.closed + main {
+  margin-left: 0;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #000 !important; /* Fondo negro */
+  color: #e0e0e0 !important;
+  border-top: 2px solid #000; /* Borde negro */
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* ===== HEADER SUPERIOR ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000 !important; /* Fondo negro */
+  color: #e0e0e0 !important;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-content h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  color: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
+}
+
+.header-img {
+  height: 70px;
+  max-width: 320px;
+  width: 100%;
+  margin-left: 18px;
+  border-radius: 8px;
+  background: #000 !important;
+  border: 2px solid #000;
+  object-fit: contain;
+  padding: 4px;
+  display: block;
+}
+
+/* ===== LISTA DEL MENÚ ===== */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list > li {
+  margin-bottom: 10px;
+}
+
+/* ===== BOTONES PRINCIPALES ===== */
+.submenu-btn {
+  background: none;
+  border: none;
+  color: #fff; /* Blanco */
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+.submenu-btn:hover {
+  background-color: #00BFFF !important;
+  color: #000 !important;
+}
+
+/* ===== SUBMENÚ (OCULTO POR DEFECTO) ===== */
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+.submenu li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  background: transparent;
+}
+.submenu li a:hover {
+  background-color: #00BFFF !important;
+  color: #000 !important;
+}
+
+/* ===== SUBMENÚ VISIBLE ===== */
+.submenu.open {
+  display: block;
+}
+
+/* ===== SECCIONES ===== */
+section {
+  background: #000 !important; /* Fondo negro */
+  color: #e0e0e0 !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: none;
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: auto;
+  margin-left: 0;
+  left: 0;
+  right: 0;
+  transform: none;
+}
+
+/* Todas las secciones especiales: fondo negro, texto blanco */
+section#generacion-electrica,
+section#transmision,
+section#distribucion,
+section#fuente-de-energia-primaria,
+section#centrales-termicas,
+section#centrales-hidroelectricas,
+section#centrales-eolicas,
+section#centrales-solares,
+section#centrales-nucleares,
+section#no-renovables,
+section#renovables,
+section#sistemas-de-generacion,
+section#sistema-segun-escalado,
+section#sistema-segun-conexion,
+section#sistema-de-generacion-electrica,
+section#generador-electrica,
+section#sistema-de-excitacion,
+section#transformadores-elevados,
+section#sistemas-de-control-y-proteccion {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Ajusta títulos y subtítulos de los párrafos a azul eléctrico */
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
+  color: #00BFFF !important;
+  font-family: 'Segoe UI', serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+
+/* Elimina cualquier fondo y padding de las cajas internas */
+.section-content {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  text-align: inherit !important;
+  color: inherit !important;
+}
+
+/* ===== ESTILO UNIFICADO PARA TEXTO BLANCO ===== */
+section p,
+.section-content p,
+main p,
+aside p,
+footer p,
+body p,
+li,
+.menu-list a,
+.submenu-btn {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #fff !important;
+  font-family: 'Segoe UI', sans-serif !important;
+}
+
+/* Refuerzo para todos los párrafos y elementos de texto blanco */
+p, li, a, .submenu-btn, .menu-list a {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+/* ===== ESTILO PARA TÍTULOS ===== */
+h1, h2, h3, h4, h5, h6 {
+  color: #00BFFF !important; /* Azul eléctrico */
+  font-family: 'Segoe UI', serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
